@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect('smfanak');
+    return redirect('rehabilitasi');
 });
-Route::resource('smfanak','SmfanakController');
+Route::resource('rehabilitasi','RehabilitasiController');

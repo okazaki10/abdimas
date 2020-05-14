@@ -19527,6 +19527,287 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Form_rehabilitasi.vue?vue&type=template&id=613b77b3&":
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Form_rehabilitasi.vue?vue&type=template&id=613b77b3& ***!
+  \********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("div", { staticClass: "mb-4" }, [
+        _c(
+          "label",
+          {
+            staticClass: "block text-gray-700 text-sm font-bold mb-2",
+            attrs: { for: "username" }
+          },
+          [_vm._v("\n                       Username\n                   ")]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          staticClass:
+            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+          attrs: { name: "id_user", type: "number" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "mb-4" }, [
+        _c(
+          "label",
+          {
+            staticClass: "block text-gray-700 text-sm font-bold mb-2",
+            attrs: { for: "username" }
+          },
+          [_vm._v("\n                       Username\n                   ")]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          staticClass:
+            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+          attrs: { name: "keluhan_utama", type: "text" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "mb-4" }, [
+        _c(
+          "label",
+          {
+            staticClass: "block text-gray-700 text-sm font-bold mb-2",
+            attrs: { for: "username" }
+          },
+          [_vm._v("\n                       Username\n                   ")]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          staticClass:
+            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+          attrs: { name: "riwayat_sekarang", type: "text" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "mb-4" }, [
+        _c(
+          "label",
+          {
+            staticClass: "block text-gray-700 text-sm font-bold mb-2",
+            attrs: { for: "username" }
+          },
+          [_vm._v("\n                       Username\n                   ")]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          staticClass:
+            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+          attrs: { name: "riwayat_dulu", type: "text" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "mb-4" }, [
+        _c(
+          "label",
+          {
+            staticClass: "block text-gray-700 text-sm font-bold mb-2",
+            attrs: { for: "username" }
+          },
+          [_vm._v("\n                       Username\n                   ")]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          staticClass:
+            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+          attrs: { name: "pemeriksaan_fisik", type: "text" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "mb-4" }, [
+        _c(
+          "label",
+          {
+            staticClass: "block text-gray-700 text-sm font-bold mb-2",
+            attrs: { for: "username" }
+          },
+          [_vm._v("\n                       Username\n                   ")]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          staticClass:
+            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+          attrs: { name: "diagnosis", type: "text" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "mb-4" }, [
+        _c(
+          "label",
+          {
+            staticClass: "block text-gray-700 text-sm font-bold mb-2",
+            attrs: { for: "username" }
+          },
+          [_vm._v("\n                       Username\n                   ")]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          staticClass:
+            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+          attrs: { name: "program", type: "text" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "mb-4" }, [
+        _c(
+          "label",
+          {
+            staticClass: "block text-gray-700 text-sm font-bold mb-2",
+            attrs: { for: "username" }
+          },
+          [_vm._v("\n                       Username\n                   ")]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          staticClass:
+            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+          attrs: { name: "terapi", type: "text" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "mb-4" }, [
+        _c(
+          "label",
+          {
+            staticClass: "block text-gray-700 text-sm font-bold mb-2",
+            attrs: { for: "username" }
+          },
+          [_vm._v("\n                       jam keluar\n                   ")]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          staticClass:
+            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+          attrs: { name: "jam_keluar", type: "date" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "mb-4" }, [
+        _c(
+          "label",
+          {
+            staticClass: "block text-gray-700 text-sm font-bold mb-2",
+            attrs: { for: "username" }
+          },
+          [_vm._v("\n                       kontrol\n                   ")]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          staticClass:
+            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+          attrs: { name: "kontrol", type: "number" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "mb-4" }, [
+        _c(
+          "label",
+          {
+            staticClass: "block text-gray-700 text-sm font-bold mb-2",
+            attrs: { for: "username" }
+          },
+          [_vm._v("\n                       tgl_kontrol\n                   ")]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          staticClass:
+            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+          attrs: { name: "tgl_kontrol", type: "date" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "mb-4" }, [
+        _c(
+          "label",
+          {
+            staticClass: "block text-gray-700 text-sm font-bold mb-2",
+            attrs: { for: "username" }
+          },
+          [_vm._v("\n                       intensif\n                   ")]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          staticClass:
+            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+          attrs: { name: "intensif", type: "number" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "mb-4" }, [
+        _c(
+          "label",
+          {
+            staticClass: "block text-gray-700 text-sm font-bold mb-2",
+            attrs: { for: "username" }
+          },
+          [_vm._v("\n                       Username\n                   ")]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          staticClass:
+            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+          attrs: { name: "ruang_rawat", type: "text" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "mb-4" }, [
+        _c(
+          "label",
+          {
+            staticClass: "block text-gray-700 text-sm font-bold mb-2",
+            attrs: { for: "username" }
+          },
+          [_vm._v("\n                       Username\n                   ")]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          staticClass:
+            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+          attrs: { name: "tanda_tangan", type: "text" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "flex items-center justify-between" }, [
+        _c(
+          "button",
+          {
+            staticClass:
+              "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline",
+            attrs: { type: "submit" }
+          },
+          [_vm._v("\n                       masukan data\n                   ")]
+        )
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js":
 /*!********************************************************************!*\
   !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
@@ -31699,11 +31980,15 @@ module.exports = function(module) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Artikel_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/Artikel.vue */ "./resources/js/components/Artikel.vue");
+/* harmony import */ var _components_Form_rehabilitasi_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Form_rehabilitasi.vue */ "./resources/js/components/Form_rehabilitasi.vue");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 
 Vue.component('artikel', _components_Artikel_vue__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+Vue.component('form_rehabilitasi', _components_Form_rehabilitasi_vue__WEBPACK_IMPORTED_MODULE_1__["default"]);
+;
 var app = new Vue({
   el: '#app'
 });
@@ -31790,6 +32075,59 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Artikel_vue_vue_type_template_id_b835c4de___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Artikel_vue_vue_type_template_id_b835c4de___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Form_rehabilitasi.vue":
+/*!*******************************************************!*\
+  !*** ./resources/js/components/Form_rehabilitasi.vue ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Form_rehabilitasi_vue_vue_type_template_id_613b77b3___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Form_rehabilitasi.vue?vue&type=template&id=613b77b3& */ "./resources/js/components/Form_rehabilitasi.vue?vue&type=template&id=613b77b3&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _Form_rehabilitasi_vue_vue_type_template_id_613b77b3___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Form_rehabilitasi_vue_vue_type_template_id_613b77b3___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Form_rehabilitasi.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Form_rehabilitasi.vue?vue&type=template&id=613b77b3&":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/components/Form_rehabilitasi.vue?vue&type=template&id=613b77b3& ***!
+  \**************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Form_rehabilitasi_vue_vue_type_template_id_613b77b3___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Form_rehabilitasi.vue?vue&type=template&id=613b77b3& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Form_rehabilitasi.vue?vue&type=template&id=613b77b3&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Form_rehabilitasi_vue_vue_type_template_id_613b77b3___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Form_rehabilitasi_vue_vue_type_template_id_613b77b3___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
