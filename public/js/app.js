@@ -19557,7 +19557,7 @@ var staticRenderFns = [
             staticClass: "block text-gray-700 text-sm font-bold mb-2",
             attrs: { for: "username" }
           },
-          [_vm._v("\n                       Username\n                   ")]
+          [_vm._v("Id user")]
         ),
         _vm._v(" "),
         _c("input", {
@@ -19574,7 +19574,7 @@ var staticRenderFns = [
             staticClass: "block text-gray-700 text-sm font-bold mb-2",
             attrs: { for: "username" }
           },
-          [_vm._v("\n                       Username\n                   ")]
+          [_vm._v("Keluhan utama")]
         ),
         _vm._v(" "),
         _c("input", {
@@ -19591,7 +19591,7 @@ var staticRenderFns = [
             staticClass: "block text-gray-700 text-sm font-bold mb-2",
             attrs: { for: "username" }
           },
-          [_vm._v("\n                       Username\n                   ")]
+          [_vm._v("Riwayat penyakit sekarang")]
         ),
         _vm._v(" "),
         _c("input", {
@@ -19608,7 +19608,7 @@ var staticRenderFns = [
             staticClass: "block text-gray-700 text-sm font-bold mb-2",
             attrs: { for: "username" }
           },
-          [_vm._v("\n                       Username\n                   ")]
+          [_vm._v("Riwayat penyakit dahulu")]
         ),
         _vm._v(" "),
         _c("input", {
@@ -19625,13 +19625,13 @@ var staticRenderFns = [
             staticClass: "block text-gray-700 text-sm font-bold mb-2",
             attrs: { for: "username" }
           },
-          [_vm._v("\n                       Username\n                   ")]
+          [_vm._v("Pemeriksaan fisik")]
         ),
         _vm._v(" "),
-        _c("input", {
+        _c("textarea", {
           staticClass:
             "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-          attrs: { name: "pemeriksaan_fisik", type: "text" }
+          attrs: { name: "pemeriksaan_fisik" }
         })
       ]),
       _vm._v(" "),
@@ -19642,13 +19642,13 @@ var staticRenderFns = [
             staticClass: "block text-gray-700 text-sm font-bold mb-2",
             attrs: { for: "username" }
           },
-          [_vm._v("\n                       Username\n                   ")]
+          [_vm._v("Diagnosis rehabilitasi medis")]
         ),
         _vm._v(" "),
-        _c("input", {
+        _c("textarea", {
           staticClass:
             "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-          attrs: { name: "diagnosis", type: "text" }
+          attrs: { name: "diagnosis" }
         })
       ]),
       _vm._v(" "),
@@ -19659,13 +19659,13 @@ var staticRenderFns = [
             staticClass: "block text-gray-700 text-sm font-bold mb-2",
             attrs: { for: "username" }
           },
-          [_vm._v("\n                       Username\n                   ")]
+          [_vm._v("Program rehabilitasi medis")]
         ),
         _vm._v(" "),
-        _c("input", {
+        _c("textarea", {
           staticClass:
             "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-          attrs: { name: "program", type: "text" }
+          attrs: { name: "program" }
         })
       ]),
       _vm._v(" "),
@@ -19676,13 +19676,13 @@ var staticRenderFns = [
             staticClass: "block text-gray-700 text-sm font-bold mb-2",
             attrs: { for: "username" }
           },
-          [_vm._v("\n                       Username\n                   ")]
+          [_vm._v("Terapi/tindakan")]
         ),
         _vm._v(" "),
-        _c("input", {
+        _c("textarea", {
           staticClass:
             "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-          attrs: { name: "terapi", type: "text" }
+          attrs: { name: "terapi" }
         })
       ]),
       _vm._v(" "),
@@ -19693,7 +19693,7 @@ var staticRenderFns = [
             staticClass: "block text-gray-700 text-sm font-bold mb-2",
             attrs: { for: "username" }
           },
-          [_vm._v("\n                       jam keluar\n                   ")]
+          [_vm._v("Boleh pulang jam keluar")]
         ),
         _vm._v(" "),
         _c("input", {
@@ -19710,14 +19710,22 @@ var staticRenderFns = [
             staticClass: "block text-gray-700 text-sm font-bold mb-2",
             attrs: { for: "username" }
           },
-          [_vm._v("\n                       kontrol\n                   ")]
+          [_vm._v("Kontrol klinik")]
         ),
         _vm._v(" "),
-        _c("input", {
-          staticClass:
-            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-          attrs: { name: "kontrol", type: "number" }
-        })
+        _c(
+          "select",
+          {
+            staticClass:
+              "block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500",
+            attrs: { id: "grid-state", name: "kontrol" }
+          },
+          [
+            _c("option", { attrs: { value: "1" } }, [_vm._v("Ya")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "0" } }, [_vm._v("Tidak")])
+          ]
+        )
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "mb-4" }, [
@@ -19727,7 +19735,7 @@ var staticRenderFns = [
             staticClass: "block text-gray-700 text-sm font-bold mb-2",
             attrs: { for: "username" }
           },
-          [_vm._v("\n                       tgl_kontrol\n                   ")]
+          [_vm._v("Tanggal kontrol")]
         ),
         _vm._v(" "),
         _c("input", {
@@ -19744,14 +19752,22 @@ var staticRenderFns = [
             staticClass: "block text-gray-700 text-sm font-bold mb-2",
             attrs: { for: "username" }
           },
-          [_vm._v("\n                       intensif\n                   ")]
+          [_vm._v("Dirawat di ruang intensif")]
         ),
         _vm._v(" "),
-        _c("input", {
-          staticClass:
-            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-          attrs: { name: "intensif", type: "number" }
-        })
+        _c(
+          "select",
+          {
+            staticClass:
+              "block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500",
+            attrs: { id: "grid-state", name: "intensif" }
+          },
+          [
+            _c("option", { attrs: { value: "1" } }, [_vm._v("Ya")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "0" } }, [_vm._v("Tidak")])
+          ]
+        )
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "mb-4" }, [
@@ -19761,7 +19777,7 @@ var staticRenderFns = [
             staticClass: "block text-gray-700 text-sm font-bold mb-2",
             attrs: { for: "username" }
           },
-          [_vm._v("\n                       Username\n                   ")]
+          [_vm._v("Ruang lain")]
         ),
         _vm._v(" "),
         _c("input", {
@@ -19778,14 +19794,10 @@ var staticRenderFns = [
             staticClass: "block text-gray-700 text-sm font-bold mb-2",
             attrs: { for: "username" }
           },
-          [_vm._v("\n                       Username\n                   ")]
+          [_vm._v("Foto tanda tangan")]
         ),
         _vm._v(" "),
-        _c("input", {
-          staticClass:
-            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-          attrs: { name: "tanda_tangan", type: "text" }
-        })
+        _c("input", { attrs: { name: "tanda_tangan", type: "file" } })
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "flex items-center justify-between" }, [
@@ -19796,7 +19808,7 @@ var staticRenderFns = [
               "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline",
             attrs: { type: "submit" }
           },
-          [_vm._v("\n                       masukan data\n                   ")]
+          [_vm._v("masukan data")]
         )
       ])
     ])

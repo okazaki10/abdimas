@@ -31,8 +31,8 @@
             <p>{{ \Session::get('success') }}</p>
         </div><br />
         @endif
-        <div class="w-full max-w-xs">
-            <form class="bg-white px-8 pt-6 pb-8 mb-4" method="POST" action="{{action('RehabilitasiController@store')}}">
+        <div class="w-full">
+            <form class="bg-white px-8 pt-6 pb-8 mb-4" method="POST" enctype="multipart/form-data" action="{{action('RehabilitasiController@store')}}">
                 {{csrf_field()}}
         <form_rehabilitasi></form_rehabilitasi>
         <script src="{{asset('js/app.js')}}"></script>

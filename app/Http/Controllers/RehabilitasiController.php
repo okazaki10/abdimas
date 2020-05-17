@@ -35,8 +35,8 @@ class RehabilitasiController extends Controller
      */
     public function store(Request $request)
     {
-        $rehabilitasi = $this->validate(request(), [
-            'id_user' => 'required',
+        $this->validate(request(), [
+            'id_user' => 'required|numeric',
             'keluhan_utama' => 'required',
             'riwayat_sekarang' => 'required',
             'riwayat_dulu' => 'required',
@@ -45,14 +45,31 @@ class RehabilitasiController extends Controller
             'program' => 'required',
             'terapi' => 'required',
             'jam_keluar' => 'required',
-            'kontrol' => 'required',
-            'tgl_kontrol' => 'required',
-            'intensif' => 'required',
-            'ruang_rawat' => 'required',
+            'kontrol' => 'required|numeric',
+            'tgl_kontrol' => 'nullable',
+            'intensif' => 'required|numeric',
+            'ruang_rawat' => 'nullable',
             'tanda_tangan' => 'required'
         ]);
-        Rehabilitasi::create($rehabilitasi);
-        return redirect('rehabilitasi')->with('success', 'Semen has been added');
+        $daftar = new Rehabilitasi();
+        $daftar->id_user = $request->get('id_user');
+        $daftar->keluhan_utama = $request->get('keluhan_utama');
+        $daftar->riwayat_sekarang = $request->get('riwayat_sekarang');
+        $daftar->riwayat_dulu = $request->get('riwayat_dulu');
+        $daftar->pemeriksaan_fisik = $request->get('pemeriksaan_fisik');
+        $daftar->diagnosis = $request->get('diagnosis');
+        $daftar->program = $request->get('program');
+        $daftar->terapi = $request->get('terapi');
+        $daftar->jam_keluar = $request->get('jam_keluar');
+        $daftar->kontrol = $request->get('kontrol');
+        $daftar->tgl_kontrol = $request->get('tgl_kontrol');
+        $daftar->intensif = $request->get('intensif');
+        $daftar->ruang_rawat = $request->get('ruang_rawat');
+        $path = $request->file('tanda_tangan')->store('public/tanda_tangan');
+        $path2 = str_replace("public", "storage", $path);
+        $daftar->tanda_tangan = $path2;
+        $daftar->save();
+        return redirect('rehabilitasi')->with('success', 'Data has been added');
     }
 
     /**
