@@ -31,6 +31,7 @@
             <p>{{ \Session::get('success') }}</p>
         </div><br />
         @endif
+        <articles></articles>
         <div class="w-full">
             <form class="bg-white px-8 pt-6 pb-8 mb-4" method="POST" enctype="multipart/form-data" action="{{action('RehabilitasiController@store')}}">
                 {{csrf_field()}}
