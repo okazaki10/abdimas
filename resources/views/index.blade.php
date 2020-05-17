@@ -17,7 +17,7 @@
         <div id="app">
             <navbar></navbar>
             <div class="container">
-                <articles></articles>
+                <artikel></artikel>
             </div>
         </div>
 
