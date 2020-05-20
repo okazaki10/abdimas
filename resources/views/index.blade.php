@@ -13,7 +13,10 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     </head>
+<<<<<<< HEAD
  
+=======
+>>>>>>> parent of 4e6cb82... navbar
     <body>
         <div id="app">
          
