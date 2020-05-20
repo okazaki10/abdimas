@@ -13,9 +13,10 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     </head>
+ 
     <body>
         <div id="app">
-            <navbar></navbar>
+         
             <div class="container">
                 <artikel></artikel>
             </div>
