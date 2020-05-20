@@ -14,7 +14,7 @@ class HomePageController extends Controller
      */
     public function index()
     {
-        return redirect('rehabilitasi');
+       // return redirect('rehabilitasi');
         //return view('index');
     }
 
