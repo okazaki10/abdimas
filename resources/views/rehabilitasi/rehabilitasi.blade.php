@@ -17,7 +17,6 @@
 <body>
 
     <div id="app">
-    <navbar></navbar>
         @if ($errors->any())
         <div class="alert alert-danger">
             <ul>
