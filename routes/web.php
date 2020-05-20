@@ -13,5 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('/','RehabilitasiController');
-Route::resource('homepage','HomePageController');
+Route::resource('rehabilitasi','RehabilitasiController');
+Route::resource('/','HomePageController');
