@@ -15,8 +15,8 @@
         </svg>-->
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/b/ba/City_of_Surabaya_Logo.svg"
-          width="100"
-          height="100"
+          width="100 px"
+          height="100 px"
         />
         <div class="h-64 grid grid-flow-col gap-1">
           <span class="font-bold text-xl tracking-tight">Pemerintah Kota Surabaya</span>
