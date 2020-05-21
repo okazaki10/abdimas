@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Rehabilitasi;
 use Illuminate\Http\Request;
-
+use App\Pasien;
 class RehabilitasiController extends Controller
 {
     /**
@@ -14,7 +14,8 @@ class RehabilitasiController extends Controller
      */
     public function index()
     {
-        return view('rehabilitasi.rehabilitasi');
+        $pasiens = Pasien::all();
+        return view('rehabilitasi.rehabilitasi',compact('pasiens'));
     }
 
     /**

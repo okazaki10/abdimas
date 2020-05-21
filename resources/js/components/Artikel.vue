@@ -16,57 +16,56 @@
         type="text"
         v-model="user"
       />
-{{user}}
-{{rehabilitasi}}
-<div class="card card-body mb-2" v-for="rehabs in rehabilitasi" v-bind:key="rehabs['id']">
-      <h3>{{rehabs['id'] }}</h3>
-      <p>{{ rehabs['keluhan_utama']}}</p>
-      <hr>
-      <button @click="editArticle(article)" class="btn btn-warning mb-2">Edit</button>
-      <button @click="deleteArticle(article.id)" class="btn btn-danger">Delete</button>
+
+      {{rehabilitasi}}
+
+      <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Gambar</th>
+              <th>Judul Buku</th>
+              <th>Kategori</th>
+              <th>Harga</th>
+              <th>Bisa disewa</th>
+              <th>Stok</th>
+
+              <th colspan="3" align="center">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+           
+            <tr v-for="rehabs in rehabilitasi" v-bind:key="rehabs['id']">
+              <td>{{rehabs['id_user']}}</td>
+              <td>{{rehabs['keluhan_utama']}}</td>
+              <td>{{rehabs['pemeriksaan_fisik']}}</td>
+              <td>{{rehabs['jam_keluar']}}</td>
+              <td>{{rehabs['tgl_kontrol']}}</td>
+              <td>{{rehabs['created_at']}}</td>
+              <td>{{rehabs['updated_at']}}</td>
+              <td><a href="asdadsasda" class="btn btn-warning">Lihat</a></td>
+           
+            </tr>
+          </tbody>
+        </table>
     </div>
-    </div>
-    
   </div>
 </template>
 <script>
-
 export default {
-
-  props: ['user','rehabilitasi'],
-  
+  props: ["rehabilitasi"],
 
   data() {
     return {
-      articles: [],
-      article: {
-        id: "",
-        title: "",
-        body: ""
-      },
-      article_id: "",
-      pagination: {},
-      edit: false,
-   
-    };
     
+    };
   },
 
   created() {
 
-    this.fetchArticles();
   },
 
   methods: {
-    fetchArticles() {
-      this.edit = true;
-      this.article.id = "asdasdsa";
-      this.article.article_id = "asdasdas";
-      this.article.title = "asdasd";
-      this.article.body = "";
-      this.articles[0] = "asdasasdsa";
-      this.articles[1] = "assa";
-    }
+   
   }
 };
 </script>

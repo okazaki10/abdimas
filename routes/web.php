@@ -14,4 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 Route::redirect('/', 'rehabilitasi');
 Route::resource('rehabilitasi','RehabilitasiController');
+Route::resource('pasien','PasienController');
 Route::resource('homepage','HomePageController');

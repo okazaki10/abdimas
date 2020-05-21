@@ -1,12 +1,14 @@
 <template>
   <div>
     <div class="mb-4">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="username">Id user</label>
-      <input
-        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-        name="id_user"
-        type="number"
-      />
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="username">Nama pasien</label>
+    <select
+        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+        id="grid-state" name="id_user"
+       >
+        <option v-bind:value="pasien['id']" v-for="pasien in pasiens" v-bind:key="pasien['id']">{{pasien['nama']}}</option>
+
+      </select>
     </div>
     <div class="mb-4">
       <label class="block text-gray-700 text-sm font-bold mb-2" for="username">Keluhan utama</label>
@@ -132,3 +134,22 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  props: ["pasiens"],
+
+  data() {
+    return {
+    
+    };
+  },
+
+  created() {
+
+  },
+
+  methods: {
+   
+  }
+};
+</script>

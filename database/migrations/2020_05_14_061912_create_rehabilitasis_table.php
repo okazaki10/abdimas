@@ -15,7 +15,7 @@ class CreateRehabilitasisTable extends Migration
     {
         Schema::create('rehabilitasis', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('id_user');
+            $table->bigInteger('id_user');
             $table->string('keluhan_utama');
             $table->string('riwayat_sekarang');
             $table->string('riwayat_dulu');

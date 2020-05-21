@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\HomePage;
+use App\Pasien;
 use Illuminate\Http\Request;
-use App\Rehabilitasi;
-class HomePageController extends Controller
+
+class PasienController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,11 +14,8 @@ class HomePageController extends Controller
      */
     public function index()
     {
-    
-
-        $rehabilitasi = Rehabilitasi::all();
-      
-        return view('rehabilitasi/rehablist',compact('rehabilitasi'));
+        
+        return view('pasien.pasien');
     }
 
     /**
@@ -39,16 +36,28 @@ class HomePageController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate(request(), [
+            'nama' => 'required',
+            'no_rm' => 'required|numeric',
+            'tgl_lahir' => 'required',
+            'alamat' => 'required'
+        ]);
+        $daftar = new Pasien();
+        $daftar->nama = $request->get('nama');
+        $daftar->no_rm = $request->get('no_rm');
+        $daftar->tgl_lahir = $request->get('tgl_lahir');
+        $daftar->alamat = $request->get('alamat');
+        $daftar->save();
+        return redirect('pasien')->with('success', 'Data has been added');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\HomePage  $homePage
+     * @param  \App\Pasien  $pasien
      * @return \Illuminate\Http\Response
      */
-    public function show(HomePage $homePage)
+    public function show(Pasien $pasien)
     {
         //
     }
@@ -56,10 +65,10 @@ class HomePageController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\HomePage  $homePage
+     * @param  \App\Pasien  $pasien
      * @return \Illuminate\Http\Response
      */
-    public function edit(HomePage $homePage)
+    public function edit(Pasien $pasien)
     {
         //
     }
@@ -68,10 +77,10 @@ class HomePageController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\HomePage  $homePage
+     * @param  \App\Pasien  $pasien
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, HomePage $homePage)
+    public function update(Request $request, Pasien $pasien)
     {
         //
     }
@@ -79,10 +88,10 @@ class HomePageController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\HomePage  $homePage
+     * @param  \App\Pasien  $pasien
      * @return \Illuminate\Http\Response
      */
-    public function destroy(HomePage $homePage)
+    public function destroy(Pasien $pasien)
     {
         //
     }

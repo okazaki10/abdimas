@@ -2100,35 +2100,190 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['user', 'rehabilitasi'],
+  props: ["rehabilitasi"],
   data: function data() {
-    return {
-      articles: [],
-      article: {
-        id: "",
-        title: "",
-        body: ""
-      },
-      article_id: "",
-      pagination: {},
-      edit: false
-    };
+    return {};
   },
-  created: function created() {
-    this.fetchArticles();
+  created: function created() {},
+  methods: {}
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Form_rehabilitasi.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Form_rehabilitasi.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ["pasiens"],
+  data: function data() {
+    return {};
   },
-  methods: {
-    fetchArticles: function fetchArticles() {
-      this.edit = true;
-      this.article.id = "asdasdsa";
-      this.article.article_id = "asdasdas";
-      this.article.title = "asdasd";
-      this.article.body = "";
-      this.articles[0] = "asdasasdsa";
-      this.articles[1] = "assa";
-    }
-  }
+  created: function created() {},
+  methods: {}
 });
 
 /***/ }),
@@ -19954,86 +20109,67 @@ var render = function() {
   return _c("div", [
     _vm._m(0),
     _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "mb-4" },
-      [
-        _c(
-          "label",
+    _c("div", { staticClass: "mb-4" }, [
+      _c(
+        "label",
+        {
+          staticClass: "block text-gray-700 text-sm font-bold mb-2",
+          attrs: { for: "username" }
+        },
+        [_vm._v("Keluhan utama")]
+      ),
+      _vm._v(" "),
+      _c("input", {
+        directives: [
           {
-            staticClass: "block text-gray-700 text-sm font-bold mb-2",
-            attrs: { for: "username" }
-          },
-          [_vm._v("Keluhan utama")]
-        ),
-        _vm._v(" "),
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.user,
-              expression: "user"
-            }
-          ],
-          staticClass:
-            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-          attrs: { name: "keluhan_utama", type: "text" },
-          domProps: { value: _vm.user },
-          on: {
-            input: function($event) {
-              if ($event.target.composing) {
-                return
-              }
-              _vm.user = $event.target.value
-            }
+            name: "model",
+            rawName: "v-model",
+            value: _vm.user,
+            expression: "user"
           }
-        }),
-        _vm._v(
-          "\n" + _vm._s(_vm.user) + "\n" + _vm._s(_vm.rehabilitasi) + "\n"
-        ),
-        _vm._l(_vm.rehabilitasi, function(rehabs) {
-          return _c(
-            "div",
-            { key: rehabs["id"], staticClass: "card card-body mb-2" },
-            [
-              _c("h3", [_vm._v(_vm._s(rehabs["id"]))]),
+        ],
+        staticClass:
+          "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+        attrs: { name: "keluhan_utama", type: "text" },
+        domProps: { value: _vm.user },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.user = $event.target.value
+          }
+        }
+      }),
+      _vm._v("\n\n    " + _vm._s(_vm.rehabilitasi) + "\n\n    "),
+      _c("table", { staticClass: "table table-striped" }, [
+        _vm._m(1),
+        _vm._v(" "),
+        _c(
+          "tbody",
+          _vm._l(_vm.rehabilitasi, function(rehabs) {
+            return _c("tr", { key: rehabs["id"] }, [
+              _c("td", [_vm._v(_vm._s(rehabs["id_user"]))]),
               _vm._v(" "),
-              _c("p", [_vm._v(_vm._s(rehabs["keluhan_utama"]))]),
+              _c("td", [_vm._v(_vm._s(rehabs["keluhan_utama"]))]),
               _vm._v(" "),
-              _c("hr"),
+              _c("td", [_vm._v(_vm._s(rehabs["pemeriksaan_fisik"]))]),
               _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-warning mb-2",
-                  on: {
-                    click: function($event) {
-                      return _vm.editArticle(_vm.article)
-                    }
-                  }
-                },
-                [_vm._v("Edit")]
-              ),
+              _c("td", [_vm._v(_vm._s(rehabs["jam_keluar"]))]),
               _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-danger",
-                  on: {
-                    click: function($event) {
-                      return _vm.deleteArticle(_vm.article.id)
-                    }
-                  }
-                },
-                [_vm._v("Delete")]
-              )
-            ]
-          )
-        })
-      ],
-      2
-    )
+              _c("td", [_vm._v(_vm._s(rehabs["tgl_kontrol"]))]),
+              _vm._v(" "),
+              _c("td", [_vm._v(_vm._s(rehabs["created_at"]))]),
+              _vm._v(" "),
+              _c("td", [_vm._v(_vm._s(rehabs["updated_at"]))]),
+              _vm._v(" "),
+              _vm._m(2, true)
+            ])
+          }),
+          0
+        )
+      ])
+    ])
   ])
 }
 var staticRenderFns = [
@@ -20056,6 +20192,42 @@ var staticRenderFns = [
           "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
         attrs: { name: "id_user", type: "text" }
       })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_vm._v("Gambar")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Judul Buku")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Kategori")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Harga")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Bisa disewa")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Stok")]),
+        _vm._v(" "),
+        _c("th", { attrs: { colspan: "3", align: "center" } }, [
+          _vm._v("Action")
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", [
+      _c(
+        "a",
+        { staticClass: "btn btn-warning", attrs: { href: "asdadsasda" } },
+        [_vm._v("Lihat")]
+      )
     ])
   }
 ]
@@ -20080,275 +20252,364 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c("div", { staticClass: "mb-4" }, [
+      _c(
+        "label",
+        {
+          staticClass: "block text-gray-700 text-sm font-bold mb-2",
+          attrs: { for: "username" }
+        },
+        [_vm._v("Nama pasien")]
+      ),
+      _vm._v(" "),
+      _c(
+        "select",
+        {
+          staticClass:
+            "block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500",
+          attrs: { id: "grid-state", name: "id_user" }
+        },
+        _vm._l(_vm.pasiens, function(pasien) {
+          return _c(
+            "option",
+            { key: pasien["id"], domProps: { value: pasien["id"] } },
+            [_vm._v(_vm._s(pasien["nama"]))]
+          )
+        }),
+        0
+      )
+    ]),
+    _vm._v(" "),
+    _vm._m(0),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _vm._m(2),
+    _vm._v(" "),
+    _vm._m(3),
+    _vm._v(" "),
+    _vm._m(4),
+    _vm._v(" "),
+    _vm._m(5),
+    _vm._v(" "),
+    _vm._m(6),
+    _vm._v(" "),
+    _vm._m(7),
+    _vm._v(" "),
+    _vm._m(8),
+    _vm._v(" "),
+    _vm._m(9),
+    _vm._v(" "),
+    _vm._m(10),
+    _vm._v(" "),
+    _vm._m(11),
+    _vm._v(" "),
+    _vm._m(12),
+    _vm._v(" "),
+    _vm._m(13)
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("div", { staticClass: "mb-4" }, [
-        _c(
-          "label",
-          {
-            staticClass: "block text-gray-700 text-sm font-bold mb-2",
-            attrs: { for: "username" }
-          },
-          [_vm._v("Id user")]
-        ),
-        _vm._v(" "),
-        _c("input", {
+    return _c("div", { staticClass: "mb-4" }, [
+      _c(
+        "label",
+        {
+          staticClass: "block text-gray-700 text-sm font-bold mb-2",
+          attrs: { for: "username" }
+        },
+        [_vm._v("Keluhan utama")]
+      ),
+      _vm._v(" "),
+      _c("input", {
+        staticClass:
+          "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+        attrs: { name: "keluhan_utama", type: "text" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mb-4" }, [
+      _c(
+        "label",
+        {
+          staticClass: "block text-gray-700 text-sm font-bold mb-2",
+          attrs: { for: "username" }
+        },
+        [_vm._v("Riwayat penyakit sekarang")]
+      ),
+      _vm._v(" "),
+      _c("input", {
+        staticClass:
+          "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+        attrs: { name: "riwayat_sekarang", type: "text" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mb-4" }, [
+      _c(
+        "label",
+        {
+          staticClass: "block text-gray-700 text-sm font-bold mb-2",
+          attrs: { for: "username" }
+        },
+        [_vm._v("Riwayat penyakit dahulu")]
+      ),
+      _vm._v(" "),
+      _c("input", {
+        staticClass:
+          "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+        attrs: { name: "riwayat_dulu", type: "text" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mb-4" }, [
+      _c(
+        "label",
+        {
+          staticClass: "block text-gray-700 text-sm font-bold mb-2",
+          attrs: { for: "username" }
+        },
+        [_vm._v("Pemeriksaan fisik")]
+      ),
+      _vm._v(" "),
+      _c("textarea", {
+        staticClass:
+          "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+        attrs: { name: "pemeriksaan_fisik" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mb-4" }, [
+      _c(
+        "label",
+        {
+          staticClass: "block text-gray-700 text-sm font-bold mb-2",
+          attrs: { for: "username" }
+        },
+        [_vm._v("Diagnosis rehabilitasi medis")]
+      ),
+      _vm._v(" "),
+      _c("textarea", {
+        staticClass:
+          "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+        attrs: { name: "diagnosis" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mb-4" }, [
+      _c(
+        "label",
+        {
+          staticClass: "block text-gray-700 text-sm font-bold mb-2",
+          attrs: { for: "username" }
+        },
+        [_vm._v("Program rehabilitasi medis")]
+      ),
+      _vm._v(" "),
+      _c("textarea", {
+        staticClass:
+          "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+        attrs: { name: "program" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mb-4" }, [
+      _c(
+        "label",
+        {
+          staticClass: "block text-gray-700 text-sm font-bold mb-2",
+          attrs: { for: "username" }
+        },
+        [_vm._v("Terapi/tindakan")]
+      ),
+      _vm._v(" "),
+      _c("textarea", {
+        staticClass:
+          "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+        attrs: { name: "terapi" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mb-4" }, [
+      _c(
+        "label",
+        {
+          staticClass: "block text-gray-700 text-sm font-bold mb-2",
+          attrs: { for: "username" }
+        },
+        [_vm._v("Boleh pulang jam keluar")]
+      ),
+      _vm._v(" "),
+      _c("input", {
+        staticClass:
+          "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+        attrs: { name: "jam_keluar", type: "date" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mb-4" }, [
+      _c(
+        "label",
+        {
+          staticClass: "block text-gray-700 text-sm font-bold mb-2",
+          attrs: { for: "username" }
+        },
+        [_vm._v("Kontrol klinik")]
+      ),
+      _vm._v(" "),
+      _c(
+        "select",
+        {
           staticClass:
-            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-          attrs: { name: "id_user", type: "number" }
-        })
-      ]),
+            "block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500",
+          attrs: { id: "grid-state", name: "kontrol" }
+        },
+        [
+          _c("option", { attrs: { value: "1" } }, [_vm._v("Ya")]),
+          _vm._v(" "),
+          _c("option", { attrs: { value: "0" } }, [_vm._v("Tidak")])
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mb-4" }, [
+      _c(
+        "label",
+        {
+          staticClass: "block text-gray-700 text-sm font-bold mb-2",
+          attrs: { for: "username" }
+        },
+        [_vm._v("Tanggal kontrol")]
+      ),
       _vm._v(" "),
-      _c("div", { staticClass: "mb-4" }, [
-        _c(
-          "label",
-          {
-            staticClass: "block text-gray-700 text-sm font-bold mb-2",
-            attrs: { for: "username" }
-          },
-          [_vm._v("Keluhan utama")]
-        ),
-        _vm._v(" "),
-        _c("input", {
+      _c("input", {
+        staticClass:
+          "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+        attrs: { name: "tgl_kontrol", type: "date" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mb-4" }, [
+      _c(
+        "label",
+        {
+          staticClass: "block text-gray-700 text-sm font-bold mb-2",
+          attrs: { for: "username" }
+        },
+        [_vm._v("Dirawat di ruang intensif")]
+      ),
+      _vm._v(" "),
+      _c(
+        "select",
+        {
           staticClass:
-            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-          attrs: { name: "keluhan_utama", type: "text" }
-        })
-      ]),
+            "block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500",
+          attrs: { id: "grid-state", name: "intensif" }
+        },
+        [
+          _c("option", { attrs: { value: "1" } }, [_vm._v("Ya")]),
+          _vm._v(" "),
+          _c("option", { attrs: { value: "0" } }, [_vm._v("Tidak")])
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mb-4" }, [
+      _c(
+        "label",
+        {
+          staticClass: "block text-gray-700 text-sm font-bold mb-2",
+          attrs: { for: "username" }
+        },
+        [_vm._v("Ruang lain")]
+      ),
       _vm._v(" "),
-      _c("div", { staticClass: "mb-4" }, [
-        _c(
-          "label",
-          {
-            staticClass: "block text-gray-700 text-sm font-bold mb-2",
-            attrs: { for: "username" }
-          },
-          [_vm._v("Riwayat penyakit sekarang")]
-        ),
-        _vm._v(" "),
-        _c("input", {
+      _c("input", {
+        staticClass:
+          "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+        attrs: { name: "ruang_rawat", type: "text" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mb-4" }, [
+      _c(
+        "label",
+        {
+          staticClass: "block text-gray-700 text-sm font-bold mb-2",
+          attrs: { for: "username" }
+        },
+        [_vm._v("Foto tanda tangan")]
+      ),
+      _vm._v(" "),
+      _c("input", { attrs: { name: "tanda_tangan", type: "file" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "flex items-center justify-between" }, [
+      _c(
+        "button",
+        {
           staticClass:
-            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-          attrs: { name: "riwayat_sekarang", type: "text" }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mb-4" }, [
-        _c(
-          "label",
-          {
-            staticClass: "block text-gray-700 text-sm font-bold mb-2",
-            attrs: { for: "username" }
-          },
-          [_vm._v("Riwayat penyakit dahulu")]
-        ),
-        _vm._v(" "),
-        _c("input", {
-          staticClass:
-            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-          attrs: { name: "riwayat_dulu", type: "text" }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mb-4" }, [
-        _c(
-          "label",
-          {
-            staticClass: "block text-gray-700 text-sm font-bold mb-2",
-            attrs: { for: "username" }
-          },
-          [_vm._v("Pemeriksaan fisik")]
-        ),
-        _vm._v(" "),
-        _c("textarea", {
-          staticClass:
-            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-          attrs: { name: "pemeriksaan_fisik" }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mb-4" }, [
-        _c(
-          "label",
-          {
-            staticClass: "block text-gray-700 text-sm font-bold mb-2",
-            attrs: { for: "username" }
-          },
-          [_vm._v("Diagnosis rehabilitasi medis")]
-        ),
-        _vm._v(" "),
-        _c("textarea", {
-          staticClass:
-            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-          attrs: { name: "diagnosis" }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mb-4" }, [
-        _c(
-          "label",
-          {
-            staticClass: "block text-gray-700 text-sm font-bold mb-2",
-            attrs: { for: "username" }
-          },
-          [_vm._v("Program rehabilitasi medis")]
-        ),
-        _vm._v(" "),
-        _c("textarea", {
-          staticClass:
-            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-          attrs: { name: "program" }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mb-4" }, [
-        _c(
-          "label",
-          {
-            staticClass: "block text-gray-700 text-sm font-bold mb-2",
-            attrs: { for: "username" }
-          },
-          [_vm._v("Terapi/tindakan")]
-        ),
-        _vm._v(" "),
-        _c("textarea", {
-          staticClass:
-            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-          attrs: { name: "terapi" }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mb-4" }, [
-        _c(
-          "label",
-          {
-            staticClass: "block text-gray-700 text-sm font-bold mb-2",
-            attrs: { for: "username" }
-          },
-          [_vm._v("Boleh pulang jam keluar")]
-        ),
-        _vm._v(" "),
-        _c("input", {
-          staticClass:
-            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-          attrs: { name: "jam_keluar", type: "date" }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mb-4" }, [
-        _c(
-          "label",
-          {
-            staticClass: "block text-gray-700 text-sm font-bold mb-2",
-            attrs: { for: "username" }
-          },
-          [_vm._v("Kontrol klinik")]
-        ),
-        _vm._v(" "),
-        _c(
-          "select",
-          {
-            staticClass:
-              "block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500",
-            attrs: { id: "grid-state", name: "kontrol" }
-          },
-          [
-            _c("option", { attrs: { value: "1" } }, [_vm._v("Ya")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "0" } }, [_vm._v("Tidak")])
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mb-4" }, [
-        _c(
-          "label",
-          {
-            staticClass: "block text-gray-700 text-sm font-bold mb-2",
-            attrs: { for: "username" }
-          },
-          [_vm._v("Tanggal kontrol")]
-        ),
-        _vm._v(" "),
-        _c("input", {
-          staticClass:
-            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-          attrs: { name: "tgl_kontrol", type: "date" }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mb-4" }, [
-        _c(
-          "label",
-          {
-            staticClass: "block text-gray-700 text-sm font-bold mb-2",
-            attrs: { for: "username" }
-          },
-          [_vm._v("Dirawat di ruang intensif")]
-        ),
-        _vm._v(" "),
-        _c(
-          "select",
-          {
-            staticClass:
-              "block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500",
-            attrs: { id: "grid-state", name: "intensif" }
-          },
-          [
-            _c("option", { attrs: { value: "1" } }, [_vm._v("Ya")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "0" } }, [_vm._v("Tidak")])
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mb-4" }, [
-        _c(
-          "label",
-          {
-            staticClass: "block text-gray-700 text-sm font-bold mb-2",
-            attrs: { for: "username" }
-          },
-          [_vm._v("Ruang lain")]
-        ),
-        _vm._v(" "),
-        _c("input", {
-          staticClass:
-            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-          attrs: { name: "ruang_rawat", type: "text" }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mb-4" }, [
-        _c(
-          "label",
-          {
-            staticClass: "block text-gray-700 text-sm font-bold mb-2",
-            attrs: { for: "username" }
-          },
-          [_vm._v("Foto tanda tangan")]
-        ),
-        _vm._v(" "),
-        _c("input", { attrs: { name: "tanda_tangan", type: "file" } })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "flex items-center justify-between" }, [
-        _c(
-          "button",
-          {
-            staticClass:
-              "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline",
-            attrs: { type: "submit" }
-          },
-          [_vm._v("masukan data")]
-        )
-      ])
+            "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline",
+          attrs: { type: "submit" }
+        },
+        [_vm._v("masukan data")]
+      )
     ])
   }
 ]
@@ -20503,6 +20764,117 @@ var staticRenderFns = [
         ])
       ]
     )
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Pasien.vue?vue&type=template&id=d0977dca&":
+/*!*********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Pasien.vue?vue&type=template&id=d0977dca& ***!
+  \*********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("div", { staticClass: "mb-4" }, [
+        _c(
+          "label",
+          {
+            staticClass: "block text-gray-700 text-sm font-bold mb-2",
+            attrs: { for: "username" }
+          },
+          [_vm._v("Nama")]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          staticClass:
+            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+          attrs: { name: "nama", type: "text" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "mb-4" }, [
+        _c(
+          "label",
+          {
+            staticClass: "block text-gray-700 text-sm font-bold mb-2",
+            attrs: { for: "username" }
+          },
+          [_vm._v("No. rm")]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          staticClass:
+            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+          attrs: { name: "no_rm", type: "number" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "mb-4" }, [
+        _c(
+          "label",
+          {
+            staticClass: "block text-gray-700 text-sm font-bold mb-2",
+            attrs: { for: "username" }
+          },
+          [_vm._v("Tanggal lahir")]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          staticClass:
+            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+          attrs: { name: "tgl_lahir", type: "date" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "mb-4" }, [
+        _c(
+          "label",
+          {
+            staticClass: "block text-gray-700 text-sm font-bold mb-2",
+            attrs: { for: "username" }
+          },
+          [_vm._v("Alamat")]
+        ),
+        _vm._v(" "),
+        _c("textarea", {
+          staticClass:
+            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+          attrs: { name: "alamat" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "flex items-center justify-between" }, [
+        _c(
+          "button",
+          {
+            staticClass:
+              "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline",
+            attrs: { type: "submit" }
+          },
+          [_vm._v("masukan data")]
+        )
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -32686,6 +33058,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Articles_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Articles.vue */ "./resources/js/components/Articles.vue");
 /* harmony import */ var _components_Form_rehabilitasi_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Form_rehabilitasi.vue */ "./resources/js/components/Form_rehabilitasi.vue");
 /* harmony import */ var _components_Navbar_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Navbar.vue */ "./resources/js/components/Navbar.vue");
+/* harmony import */ var _components_Pasien_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Pasien.vue */ "./resources/js/components/Pasien.vue");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
@@ -32699,6 +33072,8 @@ Vue.component('form_rehabilitasi', _components_Form_rehabilitasi_vue__WEBPACK_IM
 Vue.component('form_list', _components_Form_rehabilitasi_vue__WEBPACK_IMPORTED_MODULE_2__["default"]);
 
 Vue.component('navbar', _components_Navbar_vue__WEBPACK_IMPORTED_MODULE_3__["default"]);
+
+Vue.component('pasien', _components_Pasien_vue__WEBPACK_IMPORTED_MODULE_4__["default"]);
 var app = new Vue({
   el: '#app'
 });
@@ -32885,15 +33260,17 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Form_rehabilitasi_vue_vue_type_template_id_613b77b3___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Form_rehabilitasi.vue?vue&type=template&id=613b77b3& */ "./resources/js/components/Form_rehabilitasi.vue?vue&type=template&id=613b77b3&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Form_rehabilitasi_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Form_rehabilitasi.vue?vue&type=script&lang=js& */ "./resources/js/components/Form_rehabilitasi.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-var script = {}
+
+
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Form_rehabilitasi_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _Form_rehabilitasi_vue_vue_type_template_id_613b77b3___WEBPACK_IMPORTED_MODULE_0__["render"],
   _Form_rehabilitasi_vue_vue_type_template_id_613b77b3___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
@@ -32907,6 +33284,20 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 if (false) { var api; }
 component.options.__file = "resources/js/components/Form_rehabilitasi.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Form_rehabilitasi.vue?vue&type=script&lang=js&":
+/*!********************************************************************************!*\
+  !*** ./resources/js/components/Form_rehabilitasi.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Form_rehabilitasi_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Form_rehabilitasi.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Form_rehabilitasi.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Form_rehabilitasi_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
@@ -32976,6 +33367,59 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbar_vue_vue_type_template_id_6dde423b___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbar_vue_vue_type_template_id_6dde423b___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Pasien.vue":
+/*!********************************************!*\
+  !*** ./resources/js/components/Pasien.vue ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Pasien_vue_vue_type_template_id_d0977dca___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Pasien.vue?vue&type=template&id=d0977dca& */ "./resources/js/components/Pasien.vue?vue&type=template&id=d0977dca&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _Pasien_vue_vue_type_template_id_d0977dca___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Pasien_vue_vue_type_template_id_d0977dca___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Pasien.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Pasien.vue?vue&type=template&id=d0977dca&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/Pasien.vue?vue&type=template&id=d0977dca& ***!
+  \***************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Pasien_vue_vue_type_template_id_d0977dca___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Pasien.vue?vue&type=template&id=d0977dca& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Pasien.vue?vue&type=template&id=d0977dca&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Pasien_vue_vue_type_template_id_d0977dca___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Pasien_vue_vue_type_template_id_d0977dca___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

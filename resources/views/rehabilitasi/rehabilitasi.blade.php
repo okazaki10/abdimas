@@ -35,7 +35,7 @@
         <div class="w-full">
             <form class="bg-white px-8 pt-6 pb-8 mb-4" method="POST" enctype="multipart/form-data" action="{{action('RehabilitasiController@store')}}">
                 {{csrf_field()}}
-                <form_rehabilitasi></form_rehabilitasi>
+                <form_rehabilitasi :pasiens="{{$pasiens}}"></form_rehabilitasi>
             </form>
         </div>
     </div>
