@@ -2,7 +2,7 @@
   <div>
     <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
       <div class="flex items-center flex-shrink-0 text-white mr-6">
-        <svg
+        <!-- <svg
           class="fill-current h-8 w-8 mr-2"
           width="54"
           height="54"
@@ -18,7 +18,7 @@
           <span class="font-bold text-xl tracking-tight">Pemerintah Kota Surabaya</span>
           <span class="font-semibold text-xl tracking-tight">RSUD Dr. Mohammad Soewandi</span>
         </div>
-        <span class="font-semibold text-xl tracking-tight">Pemerintah Kota Surabaya</span>
+        <!-- <span class="font-semibold text-xl tracking-tight">Pemerintah Kota Surabaya</span> -->
       </div>
       <div class="block lg:hidden">
         <button
