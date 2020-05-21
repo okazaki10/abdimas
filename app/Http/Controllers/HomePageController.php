@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\HomePage;
 use Illuminate\Http\Request;
-
+use App\Rehabilitasi;
 class HomePageController extends Controller
 {
     /**
@@ -14,8 +14,11 @@ class HomePageController extends Controller
      */
     public function index()
     {
-        //return redirect('rehabilitasi');
-        return view('rehabilitasi/rehablist');
+    
+        $test = "sadasdasds";
+        $rehabilitasi = Rehabilitasi::all();
+      
+        return view('rehabilitasi/rehablist',compact('test','rehabilitasi'));
     }
 
     /**

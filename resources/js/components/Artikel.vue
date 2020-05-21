@@ -5,7 +5,7 @@
       <input
         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         name="id_user"
-        type="text" v-model="articles"
+        type="text"
       />
     </div>
     <div class="mb-4">
@@ -13,40 +13,59 @@
       <input
         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         name="keluhan_utama"
-        type="text" v-model="article.body"
+        type="text"
+        v-model="user"
       />
+{{user}}
+{{rehabilitasi}}
+<div class="card card-body mb-2" v-for="rehabs in rehabilitasi" v-bind:key="rehabs['id']">
+      <h3>{{rehabs['id'] }}</h3>
+      <p>{{ rehabs['keluhan_utama']}}</p>
+      <hr>
+      <button @click="editArticle(article)" class="btn btn-warning mb-2">Edit</button>
+      <button @click="deleteArticle(article.id)" class="btn btn-danger">Delete</button>
     </div>
+    </div>
+    
   </div>
 </template>
 <script>
+
 export default {
+
+  props: ['user','rehabilitasi'],
+  
+
   data() {
     return {
       articles: [],
       article: {
-        id: '',
-        title: '',
-        body: ''
+        id: "",
+        title: "",
+        body: ""
       },
-      article_id: '',
+      article_id: "",
       pagination: {},
-      edit: false
+      edit: false,
+   
     };
+    
   },
 
   created() {
+
     this.fetchArticles();
   },
 
   methods: {
-   fetchArticles() {
+    fetchArticles() {
       this.edit = true;
-      this.article.id = 'asdasdsa';
-      this.article.article_id = 'asdasdas';
-      this.article.title = 'asdasd';
-      this.article.body = 'body';
-      this.articles[0] = 'asdasasdsa';
-      this.articles[1] = 'assa';
+      this.article.id = "asdasdsa";
+      this.article.article_id = "asdasdas";
+      this.article.title = "asdasd";
+      this.article.body = "";
+      this.articles[0] = "asdasasdsa";
+      this.articles[1] = "assa";
     }
   }
 };

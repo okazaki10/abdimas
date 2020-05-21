@@ -2089,16 +2089,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['user', 'rehabilitasi'],
   data: function data() {
     return {
       articles: [],
       article: {
-        id: '',
-        title: '',
-        body: ''
+        id: "",
+        title: "",
+        body: ""
       },
-      article_id: '',
+      article_id: "",
       pagination: {},
       edit: false
     };
@@ -2109,12 +2121,12 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     fetchArticles: function fetchArticles() {
       this.edit = true;
-      this.article.id = 'asdasdsa';
-      this.article.article_id = 'asdasdas';
-      this.article.title = 'asdasd';
-      this.article.body = 'body';
-      this.articles[0] = 'asdasasdsa';
-      this.articles[1] = 'assa';
+      this.article.id = "asdasdsa";
+      this.article.article_id = "asdasdas";
+      this.article.title = "asdasd";
+      this.article.body = "";
+      this.articles[0] = "asdasasdsa";
+      this.articles[1] = "assa";
     }
   }
 });
@@ -19940,7 +19952,96 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "mb-4" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "mb-4" },
+      [
+        _c(
+          "label",
+          {
+            staticClass: "block text-gray-700 text-sm font-bold mb-2",
+            attrs: { for: "username" }
+          },
+          [_vm._v("Keluhan utama")]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.user,
+              expression: "user"
+            }
+          ],
+          staticClass:
+            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+          attrs: { name: "keluhan_utama", type: "text" },
+          domProps: { value: _vm.user },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.user = $event.target.value
+            }
+          }
+        }),
+        _vm._v(
+          "\n" + _vm._s(_vm.user) + "\n" + _vm._s(_vm.rehabilitasi) + "\n"
+        ),
+        _vm._l(_vm.rehabilitasi, function(rehabs) {
+          return _c(
+            "div",
+            { key: rehabs["id"], staticClass: "card card-body mb-2" },
+            [
+              _c("h3", [_vm._v(_vm._s(rehabs["id"]))]),
+              _vm._v(" "),
+              _c("p", [_vm._v(_vm._s(rehabs["keluhan_utama"]))]),
+              _vm._v(" "),
+              _c("hr"),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-warning mb-2",
+                  on: {
+                    click: function($event) {
+                      return _vm.editArticle(_vm.article)
+                    }
+                  }
+                },
+                [_vm._v("Edit")]
+              ),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-danger",
+                  on: {
+                    click: function($event) {
+                      return _vm.deleteArticle(_vm.article.id)
+                    }
+                  }
+                },
+                [_vm._v("Delete")]
+              )
+            ]
+          )
+        })
+      ],
+      2
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mb-4" }, [
       _c(
         "label",
         {
@@ -19951,65 +20052,13 @@ var render = function() {
       ),
       _vm._v(" "),
       _c("input", {
-        directives: [
-          {
-            name: "model",
-            rawName: "v-model",
-            value: _vm.articles,
-            expression: "articles"
-          }
-        ],
         staticClass:
           "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-        attrs: { name: "id_user", type: "text" },
-        domProps: { value: _vm.articles },
-        on: {
-          input: function($event) {
-            if ($event.target.composing) {
-              return
-            }
-            _vm.articles = $event.target.value
-          }
-        }
-      })
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "mb-4" }, [
-      _c(
-        "label",
-        {
-          staticClass: "block text-gray-700 text-sm font-bold mb-2",
-          attrs: { for: "username" }
-        },
-        [_vm._v("Keluhan utama")]
-      ),
-      _vm._v(" "),
-      _c("input", {
-        directives: [
-          {
-            name: "model",
-            rawName: "v-model",
-            value: _vm.article.body,
-            expression: "article.body"
-          }
-        ],
-        staticClass:
-          "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-        attrs: { name: "keluhan_utama", type: "text" },
-        domProps: { value: _vm.article.body },
-        on: {
-          input: function($event) {
-            if ($event.target.composing) {
-              return
-            }
-            _vm.$set(_vm.article, "body", $event.target.value)
-          }
-        }
+        attrs: { name: "id_user", type: "text" }
       })
     ])
-  ])
-}
-var staticRenderFns = []
+  }
+]
 render._withStripped = true
 
 
