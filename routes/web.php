@@ -12,7 +12,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::redirect('/', 'rehabilitasi');
 Route::resource('rehabilitasi','RehabilitasiController');
 Route::resource('pasien','PasienController');
-Route::resource('homepage','HomePageController');
+Route::resource('/','HomePageController');

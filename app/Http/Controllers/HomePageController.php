@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\HomePage;
 use Illuminate\Http\Request;
 use App\Rehabilitasi;
+use DB;
 class HomePageController extends Controller
 {
     /**
@@ -15,10 +16,12 @@ class HomePageController extends Controller
     public function index()
     {
     
-
-        $rehabilitasi = Rehabilitasi::all();
-      
-        return view('rehabilitasi/rehablist',compact('rehabilitasi'));
+        $url = url('/');
+        $rehabilitasi = DB::table('rehabilitasis')
+        ->join('pasiens','rehabilitasis.id_user','=','pasiens.id')
+        ->select('pasiens.nama','pasiens.no_rm','pasiens.tgl_lahir','pasiens.alamat','rehabilitasis.id','rehabilitasis.keluhan_utama','rehabilitasis.riwayat_sekarang','rehabilitasis.riwayat_dulu','rehabilitasis.pemeriksaan_fisik','rehabilitasis.diagnosis','rehabilitasis.program','terapi','rehabilitasis.jam_keluar','rehabilitasis.kontrol','rehabilitasis.tgl_kontrol','rehabilitasis.intensif','rehabilitasis.ruang_rawat','rehabilitasis.tanda_tangan','rehabilitasis.created_at','rehabilitasis.updated_at')
+        ->get();  
+        return view('rehabilitasi/rehablist',compact('rehabilitasi','url'));
     }
 
     /**
