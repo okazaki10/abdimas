@@ -2601,6 +2601,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ["url"],
   data: function data() {
@@ -21790,11 +21794,13 @@ var staticRenderFns = [
         _c("img", {
           attrs: {
             src:
-              "https://upload.wikimedia.org/wikipedia/commons/b/ba/City_of_Surabaya_Logo.svg"
+              "https://upload.wikimedia.org/wikipedia/commons/b/ba/City_of_Surabaya_Logo.svg",
+            width: "50",
+            height: "50"
           }
         }),
         _vm._v(" "),
-        _c("div", { staticClass: "h-64 grid grid-flow-col gap-1" }, [
+        _c("div", [
           _c("span", { staticClass: "font-bold text-xl tracking-tight" }, [
             _vm._v("Pemerintah Kota Surabaya")
           ]),
