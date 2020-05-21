@@ -18,7 +18,7 @@
           width="100"
           height="100"
         />
-        <div class="h-64 grid grid-flow-col gap-1">
+        <div>
           <span class="font-bold text-xl tracking-tight">Pemerintah Kota Surabaya</span>
           <span class="font-semibold text-xl tracking-tight">RSUD Dr. Mohammad Soewandi</span>
         </div>
