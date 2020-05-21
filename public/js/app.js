@@ -2113,6 +2113,8 @@ __webpack_require__.r(__webpack_exports__);
       this.article.article_id = 'asdasdas';
       this.article.title = 'asdasd';
       this.article.body = 'body';
+      this.articles[0] = 'asdasasdsa';
+      this.articles[1] = 'assa';
     }
   }
 });
@@ -19938,7 +19940,39 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _vm._m(0),
+    _c("div", { staticClass: "mb-4" }, [
+      _c(
+        "label",
+        {
+          staticClass: "block text-gray-700 text-sm font-bold mb-2",
+          attrs: { for: "username" }
+        },
+        [_vm._v("Id user")]
+      ),
+      _vm._v(" "),
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.articles,
+            expression: "articles"
+          }
+        ],
+        staticClass:
+          "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+        attrs: { name: "id_user", type: "text" },
+        domProps: { value: _vm.articles },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.articles = $event.target.value
+          }
+        }
+      })
+    ]),
     _vm._v(" "),
     _c("div", { staticClass: "mb-4" }, [
       _c(
@@ -19975,29 +20009,7 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "mb-4" }, [
-      _c(
-        "label",
-        {
-          staticClass: "block text-gray-700 text-sm font-bold mb-2",
-          attrs: { for: "username" }
-        },
-        [_vm._v("Id user")]
-      ),
-      _vm._v(" "),
-      _c("input", {
-        staticClass:
-          "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-        attrs: { name: "id_user", type: "number" }
-      })
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -32634,6 +32646,8 @@ Vue.component('artikel', _components_Artikel_vue__WEBPACK_IMPORTED_MODULE_0__["d
 Vue.component('articles', _components_Articles_vue__WEBPACK_IMPORTED_MODULE_1__["default"]);
 
 Vue.component('form_rehabilitasi', _components_Form_rehabilitasi_vue__WEBPACK_IMPORTED_MODULE_2__["default"]);
+
+Vue.component('form_list', _components_Form_rehabilitasi_vue__WEBPACK_IMPORTED_MODULE_2__["default"]);
 
 Vue.component('navbar', _components_Navbar_vue__WEBPACK_IMPORTED_MODULE_3__["default"]);
 var app = new Vue({

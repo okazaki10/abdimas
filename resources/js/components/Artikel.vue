@@ -5,7 +5,7 @@
       <input
         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         name="id_user"
-        type="number"
+        type="text" v-model="articles"
       />
     </div>
     <div class="mb-4">
@@ -45,6 +45,8 @@ export default {
       this.article.article_id = 'asdasdas';
       this.article.title = 'asdasd';
       this.article.body = 'body';
+      this.articles[0] = 'asdasasdsa';
+      this.articles[1] = 'assa';
     }
   }
 };
