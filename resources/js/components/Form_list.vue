@@ -7,7 +7,7 @@
             <th class="bg-blue-100 border text-left px-8 py-4">Keluhan utama</th>
             <th class="bg-blue-100 border text-left px-8 py-4">Pemeriksaan fisik</th>
             <th class="bg-blue-100 border text-left px-8 py-4">Jam keluar</th>
-            <th class="bg-blue-100 border text-left px-8 py-4">tgl_kontrol</th>
+            <th class="bg-blue-100 border text-left px-8 py-4">Tanggal kontrol</th>
             <th class="bg-blue-100 border text-left px-8 py-4">Dibuat tanggal</th>
             <th class="bg-blue-100 border text-left px-8 py-4">Diupdate tanggal</th>
             <th class="bg-blue-100 border text-left px-8 py-4" colspan="3" align="center">Action</th>

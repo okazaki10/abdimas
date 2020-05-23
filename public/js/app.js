@@ -20634,7 +20634,7 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("th", { staticClass: "bg-blue-100 border text-left px-8 py-4" }, [
-          _vm._v("tgl_kontrol")
+          _vm._v("Tanggal kontrol")
         ]),
         _vm._v(" "),
         _c("th", { staticClass: "bg-blue-100 border text-left px-8 py-4" }, [
@@ -20901,7 +20901,7 @@ var staticRenderFns = [
       _c("input", {
         staticClass:
           "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-        attrs: { name: "jam_keluar", type: "date" }
+        attrs: { name: "jam_keluar", type: "time" }
       })
     ])
   },
@@ -21464,7 +21464,7 @@ var render = function() {
         ],
         staticClass:
           "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
-        attrs: { name: "jam_keluar", type: "date" },
+        attrs: { name: "jam_keluar", type: "time" },
         domProps: { value: _vm.rehabilitasi[0]["jam_keluar"] },
         on: {
           input: function($event) {
